@@ -16,8 +16,7 @@ const Logo = () => {
             priority
             src={logo}
             alt="logo"
-            className="ml-12"
-            // className="rounded-full dark:filter dark:invert"
+             className="dark:filter dark:invert text-gray-900"
             />
           </AspectRatio>
         </div>

@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import ClientProviders from '@/components/ClientProviders'
 
-const inter = Inter({ subsets: ['latin'] })
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'LingoLoom',
@@ -21,7 +25,7 @@ export default function RootLayout({
     <ClientProviders>
     <html lang="en">
       
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <ThemeProvider
         attribute="class"
         defaultTheme="system"

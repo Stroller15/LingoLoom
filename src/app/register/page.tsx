@@ -9,7 +9,7 @@ const RegisterPage = async () => {
         <div className="mx-auto max-w-7xl px-6 pb-12 pt-16 text-white text-center lg:px-8">
             <div className="mx-auto max-w-4xl">
                 <p className="mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
-                    Lets handle your Membership {session?.user?.name?.split(" ")?.[0]}!
+                    Let's handle your Membership <span className="text-indigo-600 dark:text-indigo-500">{session?.user?.name?.split(" ")?.[0]}!</span>
                 </p>
             </div>
             <div className="relative">

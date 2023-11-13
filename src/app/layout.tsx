@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import ClientProviders from '@/components/ClientProviders'
+import FirebaseAuthProvider from '@/components/FirebaseAuthProvider'
 
  
 const roboto = Roboto({
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={roboto.className}>
+        <FirebaseAuthProvider>
         <ThemeProvider
         attribute="class"
         defaultTheme="system"
@@ -36,6 +38,7 @@ export default function RootLayout({
         {children}
         
         </ThemeProvider>
+        </FirebaseAuthProvider>
         </body>
     </html>
     </ClientProviders>

@@ -1,7 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+
+export default async function Home() {
+ 
+
   return (
     <main className="">
       <div className="relative isolate pt-14 dark:bg-gray-900">
